@@ -1,0 +1,64 @@
+////////Bienvenid@ a esta página web sencilla :D disfruta de esta experiencia////////
+
+///REQUISITOS PARA ESTE CODIGO///
+]Asegúrate de tener instalados los siguientes programas en tu máquina:
+]XAMPP (para PHP y MySQL).
+]Node.js (para el backend).
+]Un editor de texto o IDE (por ejemplo, Visual Studio Code).
+
+/////Clonar o Descargar el Proyecto////////
+]Descarga o clona el proyecto en tu máquina. Asegúrate de que la estructura de carpetas sea similar a la siguiente:
+java
+Copiar código
+/tu-proyecto
+├── public
+│   ├── index.php
+│   ├── styles.css
+├── server.js
+└── package.json
+
+
+///Instalar Dependencias////
+]Abre una terminal y navega hasta la carpeta del proyecto.
+]Ejecuta el siguiente comando para instalar las dependencias necesarias:
+]npm install express body-parser mysql
+
+
+///Crear la Base de Datos///
+]Abre el panel de control de XAMPP y asegúrate de que el servidor MySQL esté en funcionamiento.
+]Accede a phpMyAdmin en http://localhost/phpmyadmin.
+]Crea una nueva base de datos llamada tareas.
+]Ejecuta el siguiente SQL para crear la tabla tareas:
+CREATE TABLE tareas (
+    id_tarea INT AUTO_INCREMENT PRIMARY KEY,
+    nombre_tarea VARCHAR(255) NOT NULL,
+    descripcion_tarea TEXT NOT NULL,
+    fecha_final DATE NOT NULL,
+    completada BOOLEAN DEFAULT FALSE
+);
+
+
+///Iniciar el Servidor///
+]En la terminal, asegúrate de estar en la carpeta del proyecto.
+]Ejecuta el siguiente comando para iniciar el servidor:
+]node server.js
+
+///Configurar el Frontend (PHP)///
+]Iniciar el Servidor de XAMPP
+]Abre el panel de control de XAMPP.
+]Asegúrate de que el servidor Apache esté en funcionamiento.
+
+///Colocar los Archivos///
+]Copia la carpeta public (que contiene index.php y styles.css) en el directorio htdocs de tu instalación de XAMPP. Por lo general, este directorio se encuentra en C:\xampp\htdocs\ en Windows.
+
+///Acceder a la Aplicación///
+]Abre un navegador web.
+]Accede a tu aplicación en la siguiente dirección:
+http://localhost/tu-proyecto/public/index.php
+
+///Uso de la Aplicación///
+]Una vez que accedas a la aplicación, podrás agregar nuevas tareas completando el formulario.
+]Las tareas se mostrarán en la lista. Puedes marcar una tarea como completada o eliminarla utilizando los enlaces correspondientes.
+
+NOTA: Agrega todas las actividades que necesites :D
+
